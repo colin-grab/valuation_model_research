@@ -1,0 +1,20 @@
+{
+  "n_version":"example_nn",
+  "n_lags": 10,
+  "decision_interval": 1,
+  "n_steps": 5,
+  "gammas": [0.9975,0.995,0.99,0.95,0.9],
+  "distributional_aux": true,
+  "n_atoms": 51,
+  "v_min": -0.45,
+  "v_max": 0.45,
+  "memory_size": 80000,
+  "batch_size": 256,
+  "max_episode_length": 6000,
+  "min_episode_length": 500,
+  "learning_rate": 0.00001,
+  "tau":0.01,
+  "transaction_costs": 0.002,
+  "reward_type": "log",
+  "machine": "laptop"
+}
