@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-DEFINE NEURAL NET CLASS FOR VALUATION MODEL
+EXAMPLE NEURAL NET CLASS FOR VALUATION MODEL
 
 @author: Colin Grab
 
@@ -35,7 +35,7 @@ class cdg_example_nn(keras.Model):
         self.shape_input = shape_input
          
         
-        #some example layers
+        #some example layers (replace with your own layers, logic)
         self.fc1 = Dense(50, activation='gelu',kernel_initializer="lecun_normal")
         self.drop_out_1 = layers.Dropout(0.2, name ='drop_out_1')
         self.flat = Flatten()        
@@ -64,7 +64,8 @@ class cdg_example_nn(keras.Model):
         
         # ----------------
         #to increase network, can add different layers in init and add layers here
-        
+
+        # PUT YOUR OWN LOGIC HERE
         
         #-----------------
         embedding_X = self.emb_layer(x)
